@@ -12,8 +12,8 @@ public class BaseTest {
 
 @BeforeMethod
     public void setUp(){
-    driver = new EdgeDriver();
-    driver.navigate().to("https://parabank.parasoft.com/parabank/login.htm");
+    driver = new ChromeDriver();
+    driver.navigate().to("https://parabank.parasoft.com/parabank/register.htm");
 }
 @AfterMethod
     public void tearDown(){

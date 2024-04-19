@@ -6,8 +6,8 @@ import pages.LoginPage;
 
 public class LoginPageTest extends BaseTest{
 
-    String validUserName = "ibrahimragab371@gmail.com";
-    String validPassword = "@77uiWVa6Y9k4";
+    String validUserName = "ibrahimragab";
+    String validPassword = "Adam_1010";
     String inValidUserName = "hhgfs";
     String inValidPassword = "jhggffs";
 
@@ -20,7 +20,6 @@ public class LoginPageTest extends BaseTest{
     public void inValidLogin(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigateToHomePage(inValidUserName,inValidPassword);
-
     }
 }
 
