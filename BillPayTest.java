@@ -6,7 +6,7 @@ import pages.BillPagePage;
 import pages.LoginPage;
 
 public class BillPayTest extends BaseTest{
-    String PayeeName = "Ibrahim";
+    String payeeName = "Ibrahim";
     String Address = "faisal";
     String City = "Giza";
     String State = "State";
@@ -18,9 +18,7 @@ public class BillPayTest extends BaseTest{
 
     @Test
     public void billPay(){
-        LoginPage loginPage = new LoginPage(driver);
-        BillPagePage billPay = new BillPagePage(driver);
-         billPay.billPay(PayeeName,Address,City,State,ZipCode,Phone,Account,VerifyAccount,Amount);
-         loginPage.navigateToHomePage("ibrahimragab", "Adam_1010");
+        BillPagePage billPayPage = new BillPagePage(driver);
+        billPayPage.billPay(payeeName,Address,City,State,ZipCode,Phone,Account,VerifyAccount,Amount);
     }
 }
